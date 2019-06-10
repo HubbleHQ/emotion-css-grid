@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid : Column should allow additional styling to override Col(n) method rules 1`] = `
+.emotion-0 {
+  padding: 0;
+  width: 100%;
+  float: left;
+  min-height: 1px;
+  width: 100%;
+  width: 50%;
+}
+
+@media (min-width:640px) {
+  .emotion-0 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:640px) {
+  .emotion-0 {
+    width: 8.333333333333332%;
+  }
+}
+
+@media (min-width:640px) {
+  .emotion-0 {
+    width: 49.99999999999999%;
+  }
+}
+
+@media (min-width:768px) {
+  .emotion-0 {
+    width: 75%;
+  }
+}
+
+<div
+  className="emotion-0"
+>
+  <p>
+    Hello World
+  </p>
+</div>
+`;
+
+exports[`Grid : Column should render as expected in its default state 1`] = `
+.emotion-0 {
+  padding: 0;
+  width: 100%;
+  float: left;
+  min-height: 1px;
+}
+
+@media (min-width:640px) {
+  .emotion-0 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:640px) {
+  .emotion-0 {
+    width: 8.333333333333332%;
+  }
+}
+
+<div
+  className="emotion-0"
+>
+  <p>
+    Hello World
+  </p>
+</div>
+`;
+
+exports[`Grid : Column should render as expected when passed a Col(n) method and other styling 1`] = `
+.emotion-0 {
+  padding: 0;
+  width: 100%;
+  float: left;
+  min-height: 1px;
+  width: 100%;
+  border: 1px solid blue;
+}
+
+@media (min-width:640px) {
+  .emotion-0 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:640px) {
+  .emotion-0 {
+    width: 8.333333333333332%;
+  }
+}
+
+@media (min-width:640px) {
+  .emotion-0 {
+    width: 16.666666666666664%;
+  }
+}
+
+<div
+  className="emotion-0"
+>
+  <p>
+    Hello World
+  </p>
+</div>
+`;
+
+exports[`Grid : Column should render as expected when passed a Col(n) method as a className 1`] = `
+.emotion-0 {
+  padding: 0;
+  width: 100%;
+  float: left;
+  min-height: 1px;
+  width: 100%;
+}
+
+@media (min-width:640px) {
+  .emotion-0 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:640px) {
+  .emotion-0 {
+    width: 8.333333333333332%;
+  }
+}
+
+@media (min-width:640px) {
+  .emotion-0 {
+    width: 33.33333333333333%;
+  }
+}
+
+<div
+  className="emotion-0"
+>
+  <p>
+    Hello World
+  </p>
+</div>
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid : GridContainer should render as expected in its default state 1`] = `
+.emotion-0 {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 1px;
+}
+
+<div
+  className="emotion-0"
+>
+  <p>
+    Hello World
+  </p>
+</div>
+`;

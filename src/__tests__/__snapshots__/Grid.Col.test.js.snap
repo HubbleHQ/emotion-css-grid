@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid : Col(n) method should render via Emotion as CSS when passed as a className to a React component 1`] = `
+.emotion-0 {
+  width: 100%;
+}
+
+@media (min-width:640px) {
+  .emotion-0 {
+    width: 16.666666666666664%;
+  }
+}
+
+<div
+  className="emotion-0"
+/>
+`;
