@@ -183,13 +183,8 @@ const Col = (number) => {
     || number < 1
     || typeof number !== 'number'
   ) {
-    // eslint-disable-next-line no-console
-    console.error(
-      `This is a ${
-        columnNumber
-      } column grid. The value supplied to Col (${number}) won't work!`,
-    );
-    return null;
+    throw new Error(`This is a ${columnNumber} column grid. 
+    The value supplied to Col (${number}) won't work!`);
   }
   return css`
     ${responsiveWidth(columnWidth * number)};
