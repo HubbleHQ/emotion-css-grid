@@ -2,7 +2,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-// import { css, cx } from 'react-emotion';
 import { css, jsx } from '@emotion/core';
 import { Column, Col } from '../Grid';
 

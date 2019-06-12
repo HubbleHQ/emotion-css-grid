@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-// import { css, cx } from 'react-emotion';
+
 import { css, jsx } from '@emotion/core';
 
 import {

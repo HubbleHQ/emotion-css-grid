@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { css, cx } from 'react-emotion';
+
 import { css, jsx } from '@emotion/core';
 import config from './GridConfig';
 
@@ -12,16 +12,15 @@ const {
   mobileBreakpoint,
 } = config;
 
-const columnWidthPX = gridMaxWidth / columnNumber;
-const columnWidth = (columnWidthPX / gridMaxWidth) * 100;
+const columnWidth = 100 / columnNumber; // percentage value
 
-const GridContainerStyles = css`
+const gridContainerStyles = css`
   width: 100%;
   max-width: ${gridMaxWidth}px;
   min-height: 1px;
 `;
 const GridContainer = ({ children, className }) => (
-  <div css={GridContainerStyles} className={className}>
+  <div css={gridContainerStyles} className={className}>
     {children}
   </div>
 );
@@ -31,19 +30,22 @@ GridContainer.defaultProps = {
 };
 
 GridContainer.propTypes = {
+  /**
+   * Children of the GridContainer; should be a <Grid />.
+   */
   children: PropTypes.node.isRequired,
-  className: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.object,
-  ]),
+  /**
+   * Optional class name.
+   */
+  className: PropTypes.string,
 };
 
-const GridStyles = css`
+const gridStyles = css`
   width: 100%;
   max-width: ${gridMaxWidth}px;
 `;
 const Grid = ({ children, className }) => (
-  <div css={GridStyles} className={className}>
+  <div css={gridStyles} className={className}>
     {children}
   </div>
 );
@@ -53,15 +55,18 @@ Grid.defaultProps = {
 };
 
 Grid.propTypes = {
+  /**
+   * Grid elements: should be <Row />.
+   */
   children: PropTypes.node.isRequired,
-  className: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.object,
-  ]),
+  /**
+   * Optional class name.
+   */
+  className: PropTypes.string,
 };
 
 
-const RowStyles = css`
+const rowStyles = css`
   &:before,
   &:after {
     content: '';
@@ -81,7 +86,7 @@ const Row = ({ allowMismatchedHeights, children, className }) => (
   <div
     className={className}
     css={[
-      RowStyles,
+      rowStyles,
       allowMismatchedHeights ? RowMismatchedHeights : RowEqualHeights,
     ]}
   >
@@ -95,12 +100,20 @@ Row.defaultProps = {
 };
 
 Row.propTypes = {
+  /**
+   * Allow columns in a row to display the height of their
+   * child content, instead of a uniform matching height.
+   * Default behaviour is to equalise the column heights.
+   */
   allowMismatchedHeights: PropTypes.bool,
+  /**
+   * Row elements: should be <Column />.
+   */
   children: PropTypes.node.isRequired,
-  className: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.object,
-  ]),
+  /**
+   * Optional class name.
+   */
+  className: PropTypes.string,
 };
 
 /* @param {number} column width expressed as a percentage
@@ -128,14 +141,14 @@ const responsiveGutters = css`
   }
 `;
 
-const ColumnStyles = css`
+const columnStyles = css`
   ${responsiveGutters};
   ${responsiveWidth(columnWidth)};
   float: left;
   min-height: 1px;
 `;
 const Column = ({ children, className }) => (
-  <div css={ColumnStyles} className={className}>
+  <div css={columnStyles} className={className}>
     {children}
   </div>
 );
@@ -145,11 +158,15 @@ Column.defaultProps = {
 };
 
 Column.propTypes = {
+  /**
+   * Column elements: this is where the page content will sit,
+   * so these elements can be headings, <div> etc.
+   */
   children: PropTypes.node.isRequired,
-  className: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.object,
-  ]),
+  /**
+   * Optional class name.
+   */
+  className: PropTypes.string,
 };
 
 /*
