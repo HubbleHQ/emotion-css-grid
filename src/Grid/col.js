@@ -20,7 +20,7 @@ const col = (number) => {
     || typeof number !== 'number'
   ) {
     throw new Error(`This is a ${columnNumber} column grid. 
-    The value supplied to Col (${number}) won't work!`);
+    The value supplied to col (${number}) won't work!`);
   }
   return css`
     ${responsiveWidth(columnWidth * number)};
