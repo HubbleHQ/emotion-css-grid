@@ -32,3 +32,5 @@ GridContainer.propTypes = {
    */
   className: PropTypes.string,
 };
+
+export default GridContainer;

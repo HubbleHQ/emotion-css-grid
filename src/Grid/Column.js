@@ -47,3 +47,5 @@ Column.propTypes = {
    */
   className: PropTypes.string,
 };
+
+export default Column;

@@ -56,3 +56,5 @@ Row.propTypes = {
    */
   className: PropTypes.string,
 };
+
+export default Row;
