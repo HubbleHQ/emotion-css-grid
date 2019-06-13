@@ -1,12 +1,13 @@
 /** @jsx jsx */
-import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { css, jsx } from '@emotion/core';
 
-import {
-  GridContainer, Grid, Row, Column, Col,
-} from './Grid';
+import GridContainer from './GridContainer';
+import Grid from './Grid';
+import Row from './Row';
+import Column from './Column';
+import col from './col';
 
 const containerStyle = css`
   border: 1px solid black;
@@ -66,59 +67,59 @@ storiesOf('Emotion CSS Grid', module)
             <Column>1/12th</Column>
           </Row>
           <Row css={rowStyle}>
-            <Column css={Col(2)}>1/6th</Column>
-            <Column css={Col(2)}>1/6th</Column>
-            <Column css={Col(2)}>1/6th</Column>
-            <Column css={Col(2)}>1/6th</Column>
-            <Column css={Col(2)}>1/6th</Column>
-            <Column css={Col(2)}>1/6th</Column>
+            <Column css={col(2)}>1/6th</Column>
+            <Column css={col(2)}>1/6th</Column>
+            <Column css={col(2)}>1/6th</Column>
+            <Column css={col(2)}>1/6th</Column>
+            <Column css={col(2)}>1/6th</Column>
+            <Column css={col(2)}>1/6th</Column>
           </Row>
           <Row css={rowStyle}>
-            <Column css={Col(4)}>
+            <Column css={col(4)}>
               <p>This column is the width of 4 columns (33%)!</p>
             </Column>
-            <Column css={Col(4)}>
+            <Column css={col(4)}>
               <p>This column is the width of 4 columns (33%)!</p>
             </Column>
-            <Column css={Col(4)}>
+            <Column css={col(4)}>
               <p>This column is the width of 4 columns (33%)!</p>
             </Column>
           </Row>
           <Row css={rowStyle}>
-            <Column css={Col(6)}>
+            <Column css={col(6)}>
               <p>This column is the width of 6 columns (50%)!</p>
             </Column>
-            <Column css={Col(6)}>
+            <Column css={col(6)}>
               <p>This column is the width of 6 columns (50%)!</p>
             </Column>
           </Row>
           <Row css={rowStyle}>
-            <Column css={Col(3)}>
+            <Column css={col(3)}>
               <p>This column is the width of 3 columns!</p>
             </Column>
-            <Column css={Col(3)}>
+            <Column css={col(3)}>
               <p>This column is the width of 3 columns!</p>
             </Column>
-            <Column css={Col(3)}>
+            <Column css={col(3)}>
               <p>This column is the width of 3 columns!</p>
             </Column>
-            <Column css={Col(3)}>
+            <Column css={col(3)}>
               <p>This column is the width of 3 columns!</p>
             </Column>
           </Row>
           <Row css={rowStyle}>
-            <Column css={Col(3)}>
+            <Column css={col(3)}>
               <p>This column is the width of 3 columns!</p>
             </Column>
-            <Column css={Col(3)}>
+            <Column css={col(3)}>
               <p>This column is the width of 3 columns!</p>
             </Column>
-            <Column css={Col(6)}>
+            <Column css={col(6)}>
               <p>This column is the width of 6 columns!</p>
             </Column>
           </Row>
           <Row css={rowStyle}>
-            <Column css={Col(12)}>
+            <Column css={col(12)}>
               <p>This column is the width of 12 columns!</p>
             </Column>
           </Row>

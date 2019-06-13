@@ -9,8 +9,8 @@ const { columnNumber } = config;
  * @param {number} column width expressed as a whole number from 1 to max Columns
  * @returns {(string|null)} EmotionJS CSS string, or null
  * @example
- * <Column css={Col(2)}>
- * <Column css={[Col(6), someOtherStyling]}>
+ * <Column css={col(2)}>
+ * <Column css={[col(6), someOtherStyling]}>
  * NOTE: just because you CAN add additional styling to a column doesn't mean you SHOULD.
  */
 const col = (number) => {
