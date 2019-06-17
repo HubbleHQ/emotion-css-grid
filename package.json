@@ -1,0 +1,93 @@
+{
+  "name": "emotion-css-grid",
+  "version": "1.0.0",
+  "description": "A configurable CSS grid for projects built with React and Emotion JS",
+  "author": "Angela Cullen <angela@hubblehq.com> (http://www.angelacullen.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/HubbleHQ/emotion-css-grid/",
+  "main": "dist/index.js",
+  "engines": {
+    "npm": "~6.9.0"
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "babel src -d ./dist",
+    "test": "jest",
+    "lint:js": "eslint .",
+    "start": "babel --watch src -d ./dist",
+    "storybook": "start-storybook -p 9001",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HubbleHQ/emotion-css-grid.git"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.1.2",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime-corejs2": "^7.4.4",
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.10",
+    "@storybook/addon-actions": "^5.1.3",
+    "@storybook/addon-links": "^5.1.3",
+    "@storybook/addons": "^5.1.3",
+    "@storybook/react": "^5.1.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.8.0",
+    "babel-plugin-emotion": "^10.0.9",
+    "emotion": "^10.0.9",
+    "emotion-server": "^10.0.9",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-import-resolver-alias": "^1.1.1",
+    "eslint-loader": "^1.8.0",
+    "eslint-plugin-cypress": "^2.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^24.8.0",
+    "jest-emotion": "^10.0.10",
+    "jest-fetch-mock": "^1.6.5",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-emotion": "^10.0.0"
+  },
+  "peerDependencies": {
+    "@emotion/core": "^10.0.10",
+    "react": "^16.4.2",
+    "react-emotion": "^9.2.8"
+  },
+  "jest": {
+    "automock": false,
+    "testURL": "http://localhost",
+    "modulePaths": [
+      "node_modules",
+      "src"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx"
+    ],
+    "roots": [
+      "<rootDir>/src/"
+    ],
+    "setupFilesAfterEnv": [
+      "./.jest/setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "dependencies": {}
+}
