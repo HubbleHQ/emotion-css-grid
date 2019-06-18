@@ -8,6 +8,12 @@ const { gridMaxWidth } = config;
 const gridStyles = css`
   width: 100%;
   max-width: ${gridMaxWidth}px;
+
+  & *,
+  & *::before,
+  & *::after { 
+    box-sizing: border-box; 
+  }
 `;
 const Grid = ({ children, className }) => (
   <div css={gridStyles} className={className}>
