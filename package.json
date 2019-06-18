@@ -39,6 +39,7 @@
     "@storybook/react": "^5.1.5",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.8.0",
+    "babel-loader": "7.0.0",
     "babel-plugin-emotion": "^10.0.9",
     "emotion": "^10.0.9",
     "emotion-server": "^10.0.9",
@@ -64,7 +65,6 @@
   },
   "peerDependencies": {
     "@emotion/core": "^10.0.10",
-    "babel-loader": "7.0.0",
     "react": "^16.4.2",
     "react-emotion": "^9.2.8"
   },
@@ -89,6 +89,5 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
-  },
-  "dependencies": {}
+  }
 }
