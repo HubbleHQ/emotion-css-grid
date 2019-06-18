@@ -126,4 +126,66 @@ storiesOf('Emotion CSS Grid', module)
         </Grid>
       </GridContainer>
     </div>
+  ))
+  .add('Equal Heights Toggle', () => (
+    <div css={body}>
+      <GridContainer css={containerStyle}>
+        <Grid>
+          <Row css={rowStyle}>
+            <Column css={col(6)}>
+              <p>
+                This row is using the default style rules which apply flex in order
+                to have equal-height columns regardless of content.
+              </p>
+            </Column>
+            <Column css={col(6)}>
+              <p>This column is the width of 6 columns!</p>
+              <p>
+                Sherlock Holmes closed his eyes and placed his elbows upon the arms of his chair, 
+                with his finger-tips together. "The ideal reasoner," he remarked, "would, when he 
+                had once been shown a single fact in all its bearings, deduce from it not only 
+                all the chain of events which led up to it but also all the results which would 
+                follow from it.
+              </p>
+            </Column>
+          </Row>
+          <Row allowMismatchedHeights css={rowStyle}>
+            <Column css={css`background: skyblue;`}>
+              <p>This column is the width of 1 column (1/12th)!</p>
+            </Column>
+            <Column css={[col(6), css`background: pink;`]}>
+              <p>
+                This row has the prop <strong>allowMismatchedHeights</strong>
+                &nbsp;applied, which means it will not use flexbox to equalise the
+                heights of the child columns.
+              </p>
+              <p>
+                Sherlock Holmes closed his eyes and placed his elbows upon the arms of his chair, 
+                with his finger-tips together. "The ideal reasoner," he remarked, "would, when he 
+                had once been shown a single fact in all its bearings, deduce from it not only 
+                all the chain of events which led up to it but also all the results which would 
+                follow from it.
+              </p>
+            </Column>
+            <Column css={[col(5), css`background: yellow;`]}>
+              <p>This column is the width of 5 columns!</p>
+            </Column>
+          </Row>
+          <Row css={rowStyle}>
+            <Column>
+              <p>This column is the width of 1 column (1/12th)!</p>
+            </Column>
+            <Column css={col(6)}>
+              <p>
+                This row is using the default style rules which apply flex in order
+                to have equal-height columns regardless of content.
+              </p>
+            </Column>
+            <Column css={col(5)}>
+              <p>This column is the width of 5 columns!</p>
+            </Column>
+          </Row>
+        </Grid>
+      </GridContainer>
+    </div>
   ));
