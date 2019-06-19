@@ -1,13 +1,14 @@
 /** @jsx jsx */
 import PropTypes from 'prop-types';
 import { css, jsx } from '@emotion/core';
-import config from './GridConfig';
 
+import config from './GridConfig';
 const { gridMaxWidth } = config;
 
 const gridStyles = css`
   width: 100%;
   max-width: ${gridMaxWidth}px;
+  min-height: 1px;
 
   & *,
   & *::before,
