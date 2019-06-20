@@ -1,4 +1,3 @@
-export { default as GridContainer } from './GridContainer';
 export { default as Grid } from './Grid';
 export { default as Row } from './Row';
 export { default as Column } from './Column';
