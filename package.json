@@ -5,7 +5,7 @@
   "author": "Angela Cullen <angela@hubblehq.com> (http://www.angelacullen.com)",
   "license": "MIT",
   "homepage": "https://github.com/HubbleHQ/emotion-css-grid/",
-  "main": "dist/index.js",
+  "main": "dist/Grid/index.js",
   "engines": {
     "npm": "~6.9.0"
   },
