@@ -1,36 +1,67 @@
 /** @jsx jsx */
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 
 import { css, jsx } from '@emotion/core';
-import { Column, col } from '..';
+import { Column, GridConfigProvider } from '..';
 
 const mockContent = <p>Hello World</p>;
 
+beforeEach(() => {
+  jest.spyOn(console, 'error')
+  global.console.error.mockImplementation(() => {});
+});
+
+afterEach(() => {
+  global.console.error.mockRestore();
+});
+
 describe('Grid : Column', () => {
   it('should render as expected in its default state', () => {
-    const output = shallow(<Column>{mockContent}</Column>);
-    expect(output).toMatchSnapshot();
-    expect(output.props('css')).toMatchSnapshot();
-  });
-  it('should render as expected when passed a col(n) method as a className', () => {
-    const output = shallow(<Column css={col(4)}>{mockContent}</Column>);
-    expect(output).toMatchSnapshot();
-    expect(output.props('css')).toMatchSnapshot();
-  });
-  it('should render as expected when passed a col(n) method and other styling', () => {
     const output = shallow(
-      <Column
-        css={[
-          col(2),
-          css`
-            border: 1px solid blue;
-          `,
-        ]}
-      >
-        {mockContent}
-      </Column>,
+      <GridConfigProvider gutterWidth={15} columnNumber={16} mobileBreakpoint={600}>
+        <Column>
+          {mockContent}
+        </Column>
+      </GridConfigProvider>,
     );
-    expect(output).toMatchSnapshot();
-    expect(output.props('css')).toMatchSnapshot();
+    const children = output.props().children;
+    expect(children).toMatchSnapshot();
+    expect(output.html()).toMatchSnapshot();
+  });
+  it('should render as expected when colspan is provided', () => {
+    const output = shallow(
+      <GridConfigProvider gutterWidth={15} columnNumber={16} mobileBreakpoint={600}>
+        <Column colspan={6}>
+          {mockContent}
+        </Column>
+      </GridConfigProvider>,
+    );
+    const children = output.props().children;
+    expect(children).toMatchSnapshot();
+    expect(output.html()).toMatchSnapshot();
+  });
+  it('should render as expected when provided a colspan plus styling', () => {
+    const output = shallow(
+      <GridConfigProvider gutterWidth={15} columnNumber={16} mobileBreakpoint={600}>
+        <Column colspan={6} css={css`border: 1px solid blue;`}>
+          {mockContent}
+        </Column>
+      </GridConfigProvider>,
+    );
+    const children = output.props().children;
+    expect(children).toMatchSnapshot();
+    expect(output.html()).toMatchSnapshot();
+  });
+  it('should throw an error if colspan value is greater than total number of columns', () => {
+    const testFunction = () => {
+      const output = mount(
+        <GridConfigProvider gutterWidth={15} columnNumber={16} mobileBreakpoint={600}>
+          <Column colspan={32}>
+            {mockContent}
+          </Column>
+        </GridConfigProvider>,
+      );
+    };
+    expect(testFunction).toThrowErrorMatchingSnapshot();
   });
 });

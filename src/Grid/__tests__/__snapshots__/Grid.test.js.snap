@@ -1,24 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Grid : Grid should render as expected in its default state 1`] = `
-<p>
-  Hello World
-</p>
+<Grid
+  className=""
+>
+  <p>
+    Hello World
+  </p>
+</Grid>
 `;
 
-exports[`Grid : Grid should render as expected in its default state 2`] = `
-Object {
-  "__EMOTION_LABEL_PLEASE_DO_NOT_USE__": "Grid",
-  "__EMOTION_TYPE_PLEASE_DO_NOT_USE__": "div",
-  "children": <p>
-    Hello World
-  </p>,
-  "className": "",
-  "css": Object {
-    "map": "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkdyaWQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT3NCIiwiZmlsZSI6IkdyaWQuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKiogQGpzeCBqc3ggKi9cbmltcG9ydCBQcm9wVHlwZXMgZnJvbSAncHJvcC10eXBlcyc7XG5pbXBvcnQgeyBjc3MsIGpzeCB9IGZyb20gJ0BlbW90aW9uL2NvcmUnO1xuaW1wb3J0IGNvbmZpZyBmcm9tICcuL0dyaWRDb25maWcnO1xuXG5jb25zdCB7IGdyaWRNYXhXaWR0aCB9ID0gY29uZmlnO1xuXG5jb25zdCBncmlkU3R5bGVzID0gY3NzYFxuICB3aWR0aDogMTAwJTtcbiAgbWF4LXdpZHRoOiAke2dyaWRNYXhXaWR0aH1weDtcblxuICAmICosXG4gICYgKjo6YmVmb3JlLFxuICAmICo6OmFmdGVyIHsgXG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDsgXG4gIH1cbmA7XG5jb25zdCBHcmlkID0gKHsgY2hpbGRyZW4sIGNsYXNzTmFtZSB9KSA9PiAoXG4gIDxkaXYgY3NzPXtncmlkU3R5bGVzfSBjbGFzc05hbWU9e2NsYXNzTmFtZX0+XG4gICAge2NoaWxkcmVufVxuICA8L2Rpdj5cbik7XG5cbkdyaWQuZGVmYXVsdFByb3BzID0ge1xuICBjbGFzc05hbWU6ICcnLFxufTtcblxuR3JpZC5wcm9wVHlwZXMgPSB7XG4gIC8qKlxuICAgKiBHcmlkIGVsZW1lbnRzOiBzaG91bGQgYmUgPFJvdyAvPi5cbiAgICovXG4gIGNoaWxkcmVuOiBQcm9wVHlwZXMubm9kZS5pc1JlcXVpcmVkLFxuICAvKipcbiAgICogT3B0aW9uYWwgY2xhc3MgbmFtZS5cbiAgICovXG4gIGNsYXNzTmFtZTogUHJvcFR5cGVzLnN0cmluZyxcbn07XG5cbmV4cG9ydCBkZWZhdWx0IEdyaWQ7Il19 */",
-    "name": "19uq1xz-gridStyles",
-    "next": undefined,
-    "styles": "width:100%;max-width:1920px;& *,& *::before,& *::after{box-sizing:border-box;}label:gridStyles;",
-  },
-}
-`;
+exports[`Grid : Grid should render as expected in its default state 2`] = `"<div class=\\" css-1mqhhea-gridStyles\\"><p>Hello World</p></div>"`;
