@@ -1,6 +1,6 @@
 {
   "name": "@hubble/emotion-css-grid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A configurable CSS grid for projects built with React and Emotion JS",
   "author": "Angela Cullen <angela@hubblehq.com> (http://www.angelacullen.com)",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "npm": "~6.9.0"
   },
   "files": [
-    "dist/*", 
+    "dist/*",
     "!/**/__tests__",
     "!/**/*.stories.js"
   ],
