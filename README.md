@@ -5,6 +5,10 @@ A CSS grid framework for projects using React and Emotion JS (10)
 
 ### Installation
 
+```
+npm i @hubble/emotion-css-grid
+```
+
 ### Dependencies
 
 This package has several peer dependencies. In order to use Emotion CSS Grid you will also need to install:
@@ -22,7 +26,7 @@ For React files where you intend to use the grid, make sure you include these im
 ```js
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
-import { Grid, Row, Column } from 'emotion-css-grid';
+import { Grid, Row, Column } from '@hubble/emotion-css-grid';
 ```
 
 An example of basic usage (using the default settings) looks like this:
@@ -118,7 +122,7 @@ Any settings which do not receive custom values will use the defaults.
 ### Example
 
 ```js
-import { GridConfigProvider, Grid, Row, Column } from 'emotion-css-grid';
+import { GridConfigProvider, Grid, Row, Column } from '@hubble/emotion-css-grid';
 ```
 
 ```js

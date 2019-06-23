@@ -1,5 +1,5 @@
 {
-  "name": "emotion-css-grid",
+  "name": "@hubble/emotion-css-grid",
   "version": "1.0.0",
   "description": "A configurable CSS grid for projects built with React and Emotion JS",
   "author": "Angela Cullen <angela@hubblehq.com> (http://www.angelacullen.com)",
