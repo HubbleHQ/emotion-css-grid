@@ -1,7 +1,10 @@
 # https://docs.npmjs.com/misc/developers#keeping-files-out-of-your-package
 
 #tests
-__tests__
+/**/__tests__
+
+#stories
+/**/*.stories.js
 
 #linters
 .eslintrc*

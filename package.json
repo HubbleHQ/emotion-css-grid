@@ -10,7 +10,9 @@
     "npm": "~6.9.0"
   },
   "files": [
-    "/dist"
+    "dist/*", 
+    "!/**/__tests__",
+    "!/**/*.stories.js"
   ],
   "scripts": {
     "build": "babel src -d ./dist",
