@@ -11,9 +11,8 @@ This package has several peer dependencies. In order to use Emotion CSS Grid you
 
 ```js
 "@emotion/core": "^10.0.10",
-"prop-types": "^15.7.0",
-"react": "^16.4.2",
-"react-emotion": "^9.2.8"
+"prop-types": "^15.6.0",
+"react": "^16.3.0",
 ```
 
 ### Get Started
