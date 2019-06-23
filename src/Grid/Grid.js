@@ -2,24 +2,31 @@
 import PropTypes from 'prop-types';
 import { css, jsx } from '@emotion/core';
 
-import config from './GridConfig';
-const { gridMaxWidth } = config;
+import { GridContext } from './GridConfig';
 
-const gridStyles = css`
-  width: 100%;
-  max-width: ${gridMaxWidth}px;
-  min-height: 1px;
-
-  & *,
-  & *::before,
-  & *::after { 
-    box-sizing: border-box; 
-  }
-`;
 const Grid = ({ children, className }) => (
-  <div css={gridStyles} className={className}>
-    {children}
-  </div>
+  <GridContext.Consumer>
+    {
+      ({ gridMaxWidth }) => {
+        const gridStyles = css`
+          width: 100%;
+          max-width: ${gridMaxWidth}px;
+          min-height: 1px;
+
+          & *,
+          & *::before,
+          & *::after { 
+            box-sizing: border-box; 
+          }
+        `;
+        return (
+          <div css={gridStyles} className={className}>
+            {children}
+          </div>
+        );
+      }
+    }
+  </GridContext.Consumer>
 );
 
 Grid.defaultProps = {
