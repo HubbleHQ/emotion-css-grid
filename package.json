@@ -3,6 +3,13 @@
   "version": "1.0.1",
   "description": "A configurable CSS grid for projects built with React and Emotion JS",
   "author": "Angela Cullen <angela@hubblehq.com> (http://www.angelacullen.com)",
+  "keywords": [
+    "css",
+    "grid",
+    "emotion",
+    "@emotion/core",
+    "react"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/HubbleHQ/emotion-css-grid/",
   "main": "dist/Grid/index.js",
