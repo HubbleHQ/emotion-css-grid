@@ -10,4 +10,4 @@ exports[`Grid : Grid should render as expected in its default state 1`] = `
 </Grid>
 `;
 
-exports[`Grid : Grid should render as expected in its default state 2`] = `"<div class=\\" css-1mqhhea-gridStyles\\"><p>Hello World</p></div>"`;
+exports[`Grid : Grid should render as expected in its default state 2`] = `"<div class=\\" css-1ka39jp-gridStyles\\"><p>Hello World</p></div>"`;
