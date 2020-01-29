@@ -162,10 +162,19 @@ yarn install
 yarn test
 ```
 
+### Update Test Snapshot
+```shell
+yarn test --updateSnapshot
+```
+
+### Update yarn.lock
+```shell
+yarn upgrade
+```
+
 ### Start Storybook
 ```shell
 yarn run storybook
 ```
 
 [Storybook](https://storybook.js.org/docs/basics/introduction/) is a user interface development environment, enabling developers to view and test UI components in isolation.
-
