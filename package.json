@@ -14,7 +14,8 @@
   "homepage": "https://github.com/HubbleHQ/emotion-css-grid/",
   "main": "dist/Grid/index.js",
   "engines": {
-    "npm": "~6.9.0"
+    "npm": "^6.13.4",
+    "yarn": "^1.21.1"
   },
   "files": [
     "dist/*",

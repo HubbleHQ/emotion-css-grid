@@ -11,7 +11,7 @@ exports[`Grid : Column should render as expected in its default state 1`] = `
 </Column>
 `;
 
-exports[`Grid : Column should render as expected in its default state 2`] = `"<div class=\\" css-19x2l7y-responsiveGutters-columnStyles\\"><p>Hello World</p></div>"`;
+exports[`Grid : Column should render as expected in its default state 2`] = `"<div class=\\" css-50gl1w-responsiveGutters-columnStyles\\"><p>Hello World</p></div>"`;
 
 exports[`Grid : Column should render as expected when colspan is provided 1`] = `
 <Column
@@ -24,7 +24,7 @@ exports[`Grid : Column should render as expected when colspan is provided 1`] = 
 </Column>
 `;
 
-exports[`Grid : Column should render as expected when colspan is provided 2`] = `"<div class=\\" css-xaz6nv-responsiveGutters-columnStyles\\"><p>Hello World</p></div>"`;
+exports[`Grid : Column should render as expected when colspan is provided 2`] = `"<div class=\\" css-b098i7-responsiveGutters-columnStyles\\"><p>Hello World</p></div>"`;
 
 exports[`Grid : Column should render as expected when provided a colspan plus styling 1`] = `
 <Column
@@ -37,7 +37,7 @@ exports[`Grid : Column should render as expected when provided a colspan plus st
 </Column>
 `;
 
-exports[`Grid : Column should render as expected when provided a colspan plus styling 2`] = `"<div class=\\"css-64k88s-responsiveGutters-columnStyles-output\\"><p>Hello World</p></div>"`;
+exports[`Grid : Column should render as expected when provided a colspan plus styling 2`] = `"<div class=\\"css-11g1qlu-responsiveGutters-columnStyles-output\\"><p>Hello World</p></div>"`;
 
 exports[`Grid : Column should throw an error if colspan value is greater than total number of columns 1`] = `
 "<Column> cannot use a colspan prop that is 
