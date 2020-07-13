@@ -1,4 +1,4 @@
-# Emotion CSS Grid
+# [DEPRECATED] Emotion CSS Grid
 A CSS grid framework for projects using React and Emotion JS (10)
 
 ## How to Use
